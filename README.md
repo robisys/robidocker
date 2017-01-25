@@ -1,6 +1,6 @@
 # robidocker
 
-[![Build Status](https://travis-ci.org/robisys/robidock.svg)](https://travis-ci.org/robisys/robidock)
+[![Build Status](https://travis-ci.org/robisys/robidocker.svg)](https://travis-ci.org/robisys/robidocker)
 
 ## Documentation
-Robidock
+Robidocker
