@@ -17,11 +17,11 @@ services:
 
    
 before_install:
-#- docker build -t robidock/myrunning .
+- docker build -t robidock/myrunning .
 - docker run --name testus  robidock/myrunning
 - docker ps -a
 - docker images
-#- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.example.com
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.example.com
 
 script:
 - docker images robidock/myrunning
