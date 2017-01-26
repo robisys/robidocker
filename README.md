@@ -5,8 +5,9 @@
 ## Documentation
 [![Build Status](https://docs.travis-ci.com/)](https://docs.travis-ci.com/)
 Robidocker
+## File
+File:.travis.yml
 
-File:.trvis.jml
 sudo: required
 
 language: ruby
