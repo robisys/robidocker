@@ -27,8 +27,6 @@ after_success:
    docker push robidock/myrunning;
    fi
 
-before_deploy: "echo 'ready?'"
-
 deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
