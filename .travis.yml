@@ -15,7 +15,7 @@ before_install:
 - docker images
 #- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.example.com
 
-after_install:  "echo  'ready?'"
+#after_install:  "echo  'ready?'"
 
 before_script:  "echo 'ready?'"
 
@@ -23,13 +23,13 @@ script:
 - docker images robidock/myrunning
 
 after_success:
-- "echo ' after_success ready?'"
+# "echo ' after_success ready?'"
  - if [ "$TRAVIS_BRANCH" == "master" ]; then
      docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
    docker push robidock/myrunning;
    fi
 
-before_deploy: "echo ' before_deploy ready?'"
+before_deploy: "echo 'ready?'"
 
 deploy:
   provider: releases
