@@ -14,6 +14,10 @@ before_install:
 - docker images
 #- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.example.com
 
+after_install:  "echo  after install 'ready?'"
+
+before_script:  "echo 'ready?'"
+
 script:
 - docker images robidock/myrunning
 
