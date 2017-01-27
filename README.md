@@ -5,6 +5,11 @@
 ## Documentation
 [![Build Status](https://docs.travis-ci.com/)](https://docs.travis-ci.com/)
 Robidocker
+## Build Lifecycle
+install 
+
+deployment
+
 ## File
 File:.travis.yml
 
