@@ -29,10 +29,11 @@ after_success:
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
+ # api_key: "GITHUB OAUTH TOKEN"
+  user: "robisys"
+  password: "Rsys#19K"
+  file: "FILE_TO_UPLOAD"
   skip_cleanup: true
   on:
     tags: true
             
-        
