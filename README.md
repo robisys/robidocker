@@ -10,7 +10,7 @@ install
 
 deployment
 
-## File
+## Customizing the Build 
 File:.travis.yml
 
 sudo: required
