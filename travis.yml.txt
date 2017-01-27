@@ -22,19 +22,7 @@ script:
 
 after_success:
 - "echo 'ready?'"
-- if [ "$TRAVIS_BRANCH" == "master" ]; then
-     docker login  -u="robisys" -p="Rsys#19K";
-   docker push robidock/myrunning;
-   fi
 
 deploy:
 - "echo 'ready?'"
-- provider: releases
- # api_key: "GITHUB OAUTH TOKEN"
-- user: "robisys"
-- password: "Rsys#19K"
-- file: "FILE_TO_UPLOAD"
-- skip_cleanup: true
-- on:
-    tags: true
-            
+
