@@ -6,7 +6,8 @@ services:
 - docker
 
    
-before_install:  "echo before install "
+before_install:  
+- "echo before install "
 #- docker build -t robidock/myrunning .
 - docker pull robidock/myrunning
 - docker run --name testus  robidock/myrunning
@@ -21,7 +22,8 @@ before_script:  "echo 'ready?'"
 script:
 - docker images robidock/myrunning
 
-after_success:"echo after success "
+after_success:
+- "echo after success "
  - if [ "$TRAVIS_BRANCH" == "master" ]; then
      docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
    docker push robidock/myrunning;
