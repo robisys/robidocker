@@ -5,6 +5,8 @@
 #docker run -it  --rm --volume  weba-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
 #docker run -it  --rm --volume  webb-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
 
+#docker run -it  --rm --volume  webb-app-data:/mnt -v "$PWD":/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
+
 #docker run -dit -p 8083:80 --name runweb -v "$PWD":/usr/local/apache2/htdocs/ robidock/apache-web 
 #docker exec -it  runweb /bin/bash
 
