@@ -1,0 +1,40 @@
+version: "2"
+services:
+  apache:
+#    image: medialta/docker-contao
+    image: webdevops/php-apache:debian-8-php7
+    container_name: apache
+    ports:
+      - "8085:80"
+    depends_on:
+      - "mysql"
+    links:
+      - mysql
+    volumes:
+      - ./contao:/app
+    environment:
+      WEB_DOCUMENT_INDEX: "/web/app.php"
+  mysql:
+    image: mysql:5.6
+    container_name: mysql1
+    expose:
+      - 3306
+    volumes:
+      - ./dbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: contaodb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      
+#volumes:
+#     dbdata:
+#       external:
+#         name: weba-app-data
+     
+#     contao:
+#       external:
+#         name: webb-app-data
+         
+              
+               
