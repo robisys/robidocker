@@ -2,8 +2,8 @@
 docker volume create --name weba-app-data
 docker volume create --name webb-app-data
 
-#docker run -it  --rm --volume  weba-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
-#docker run -it  --rm --volume  webb-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
+#docker run -it  --rm --volume  weba-app-data:/mnt  --name  wruna -h HOSTa robidock/opensuse /bin/bash
+#docker run -it  --rm --volume  webb-app-data:/mnt  --name  wrunb -h HOSTb robidock/opensuse /bin/bash
 
 #docker run -it  --rm --volume  webb-app-data:/mnt -v "$PWD":/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
 
