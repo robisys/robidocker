@@ -13,3 +13,13 @@ RUN mkdir -p /build/
 ## Add requirements file and run pip
 ADD requirements.txt /build/
 RUN pip install -r /build/requirements.txt
+
+## Add blog code nd required files
+ADD static /build/static
+ADD templates /build/templates
+ADD hamerkop /build/
+ADD config.yml /build/
+ADD articles /build/articles
+
+## Run Generator
+RUN /build/hamerkop -c /build/config.yml
