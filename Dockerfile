@@ -23,3 +23,5 @@ ADD articles /build/articles
 
 ## Run Generator
 RUN /build/hamerkop -c /build/config.yml
+
+##
