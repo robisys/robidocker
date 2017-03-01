@@ -8,6 +8,8 @@
 [![Build Status](https://docs.travis-ci.com/)](https://docs.travis-ci.com/)
 Robidocker
 
+[customizing](https://docs.travis-ci.com/user/customizing-the-build)
+
 [ compose-file](https://docs.docker.com/compose/compose-file/)
 
 ## Build Lifecycle
