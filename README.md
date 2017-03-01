@@ -9,6 +9,7 @@
 Robidocker
 
 [Getting started with Docker by Dockerizing this Blog](http://bencane.com/2015/12/01/getting-started-with-docker-by-dockerizing-this-blog/)
+
 [customizing](https://docs.travis-ci.com/user/customizing-the-build)
 
 [Using Travis CI to test Docker builds](http://bencane.com/2016/01/11/using-travis-ci-to-test-docker-builds/)
