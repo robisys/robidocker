@@ -10,6 +10,15 @@ Robidocker
 
 [customizing](https://docs.travis-ci.com/user/customizing-the-build)
 
+[Using Travis CI to test Docker builds]http://bencane.com/2016/01/11/using-travis-ci-to-test-docker-builds/
+
+[Using Travis.ci to build Docker images]https://sebest.github.io/post/using-travis-ci-to-build-docker-images/
+
+[How to set up Docker containers in Travis CI]https://mike42.me/blog/how-to-set-up-docker-containers-in-travis-ci
+
+[Running Docker in a Travis CI build.]https://github.com/moul/travis-docker
+
+
 [ compose-file](https://docs.docker.com/compose/compose-file/)
 
 ## Build Lifecycle
