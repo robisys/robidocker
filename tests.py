@@ -37,7 +37,8 @@ if __name__ == '__main__':
     print "#" * 70
  ##   functional_results = run_functional_tests()
 
-    if unit_results and integration_results and functional_results:
+    if unit_results and integration_results :
+        ## and functional_results:
         sys.exit(0)
     else:
         sys.exit(1)
