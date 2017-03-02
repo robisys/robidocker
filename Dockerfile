@@ -16,7 +16,7 @@ RUN pip install -r /build/requirements.txt
 
 ## Add blog code nd required files
 ADD static /build/static
-ADD templates /build/templates
+#ADD templates /build/templates
 ADD hamerkop /build/
 ADD config.yml /build/
 ADD articles /build/articles
