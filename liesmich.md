@@ -20,3 +20,5 @@ https://docs.microsoft.com/de-de/azure/virtual-machines/virtual-machines-linux-d
 
 https://websetnet.com/first-steps-docker-containers-windows-server-2016/
 
+[Docker Microservice Basis mit Apache Tomcat implementieren] (http://www.infrabricks.de/blog/2014/12/19/docker-microservice-basis-mit-apache-tomcat-implementieren/)
+
