@@ -24,5 +24,5 @@ https://websetnet.com/first-steps-docker-containers-windows-server-2016/
 
 [Docker Compose, Docker Swarm, Docker Machine: Neuigkeiten aus dem Docker-Ökosystem](https://jaxenter.de/docker-compose-docker-swarm-docker-machine-neuigkeiten-aus-dem-docker-oekosystem-39137)
 
-[docker-php-webentwicklung](http://prooph-software.de/blog/docker-php-webentwicklung.html)
+[docker-php-webentwicklung  http://prooph-software.de](http://prooph-software.de/blog/docker-php-webentwicklung.html)
 
