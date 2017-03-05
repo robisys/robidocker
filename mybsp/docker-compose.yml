@@ -49,6 +49,16 @@ services:
       - MYSQL_USER=dev
       - MYSQL_PASSWORD=dev
       - MYSQL_DATABASE=prooph
-      
     
+    volumes_from:
+       - datamariadb  
+  
+  datamariadb:
+    image: debian:jessie
+    volumes:
+       - ./dbdata:/var/lib/mysql
+       
+
+
+      
                    
