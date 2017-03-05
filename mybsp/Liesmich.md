@@ -1,3 +1,7 @@
 # Beispiel
 
-docker-compose.yml
+ docker-compose.yml
+
+im aktuellen Verzeichnis
+ public
+ phpmyadmin
