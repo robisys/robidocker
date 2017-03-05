@@ -5,6 +5,7 @@ docker-compose up  -d
 #docker-compose logs rocketchat  # Ausgabe nur eines Containers
 #docker-compose down             # Container stoppen UND löschen
 
+## docker-clear
 # docker ps -a -q |xargs docker stop
 # docker ps -q | xargs docker rm
 
