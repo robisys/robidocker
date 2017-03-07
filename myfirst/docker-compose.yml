@@ -1,0 +1,41 @@
+version: "2"
+
+services:
+#  robichat:
+#            # Auch fertige Images von robidock können verwendet werden:
+#    image: robidock/opensuse
+#    volumes:
+#       - ./mnt:/mnt
+#    command: /bin/bash
+          
+  weba:
+    image: robidock/apache-web
+    ports:
+      - "8083:80"
+    volumes:
+      - ./data:/usr/local/apache2/htdocs
+
+  webb:
+    image: robidock/apache-web
+    ports:
+      - "8084:80"
+    volumes:
+      - ./datab:/usr/local/apache2/htdocs  
+
+volumes:
+    data:
+      external: 
+        name: weba-app-data      
+
+    datab:
+      external: 
+        name: webb-app-data 
+        
+             
+
+
+
+#OC  apps-data:
+#    external:
+#      name: webb-apps-data 
+             
