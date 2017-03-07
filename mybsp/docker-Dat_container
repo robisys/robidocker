@@ -1,0 +1,8 @@
+docker volume create --name  robichat-dbdata   # Systemweiter Bezeichner (s. zuvor docker volume create)
+docker volume create   --name robichat-wwwdata        
+docker volume create   --name robichat-phpmyadmindata
+
+
+         
+      
+                   
