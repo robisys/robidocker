@@ -1,0 +1,5 @@
+#
+docker run -it  --rm --volume  weba-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
+#docker run -it  --rm --volume  webb-app-data:/mnt  --name  wrun -h HOST robidock/opensuse /bin/bash
+
+
