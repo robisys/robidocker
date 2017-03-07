@@ -7,20 +7,20 @@ import sys
     
 def run_unittests():
     ''' Execute Unit Tests '''
-    tests = unittest.TestLoader().discover('tests/unit')
-    result = unittest.TextTestRunner(verbosity=2).run(tests)
+    ### tests = unittest.TestLoader().discover('tests/unit')
+    ### result = unittest.TextTestRunner(verbosity=2).run(tests)
     return result.wasSuccessful()
 
 def run_integration_tests():
     ''' Execute Integration Tests '''
-    tests = unittest.TestLoader().discover('tests/integration')
-    result = unittest.TextTestRunner(verbosity=2).run(tests)
+    ### tests = unittest.TestLoader().discover('tests/integration')
+    ### result = unittest.TextTestRunner(verbosity=2).run(tests)
     return result.wasSuccessful()
 
 def run_functional_tests():
     ''' Execute Functional Tests '''
-    tests = unittest.TestLoader().discover('tests/functional')
-    result = unittest.TextTestRunner(verbosity=2).run(tests)
+    ### tests = unittest.TestLoader().discover('tests/functional')
+    ### result = unittest.TextTestRunner(verbosity=2).run(tests)
     return result.wasSuccessful()
 
 if __name__ == '__main__':
@@ -37,11 +37,11 @@ if __name__ == '__main__':
     print "#" * 70
     print "Test Runner: Functional tests"
     print "#" * 70
- ##   functional_results = run_functional_tests()
+    functional_results = run_functional_tests()
 
-    if unit_results and integration_results :
-        ## and functional_results:
+    if unit_results and integration_results 
+         and functional_results:
         sys.exit(0)
     else:
-        sys.exit(0)
-        ## sys.exit(1)
+        sys.exit(1)
+      
