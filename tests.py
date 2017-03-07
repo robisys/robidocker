@@ -3,6 +3,8 @@
 import unittest
 import sys
 
+ sys.exit(0)
+    
 def run_unittests():
     ''' Execute Unit Tests '''
     tests = unittest.TestLoader().discover('tests/unit')
