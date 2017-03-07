@@ -1,12 +1,12 @@
 version: "2"
 
 services:
-#  robichat:
-#            # Auch fertige Images von robidock können verwendet werden:
-#    image: robidock/opensuse
-#    volumes:
-#       - ./mnt:/mnt
-#    command: /bin/bash
+  robichat:
+            # Auch fertige Images von robidock können verwendet werden:
+    image: robidock/opensuse
+    volumes:
+       - ./mnt:/mnt
+    command: /bin/bash
           
   weba:
     image: robidock/apache-web
