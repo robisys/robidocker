@@ -3,7 +3,7 @@
 ### import unittest
 import sys
 
-if  x =0 :
+if   true :
         sys.exit(0)
     else:
 sys.exit(1)    
