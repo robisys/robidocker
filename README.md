@@ -10,6 +10,9 @@
 [travis.ci](https://github.com/travis-ci/travis-ci)  --
 [docker] (https://hub.docker.com/help/)
 
+### Tools for windows
+[kitematic](https://github.com/docker/kitematic)
+
 [![Build Status ](https://docs.travis-ci.com/)](https://docs.travis-ci.com/)
 Robidocker
 
