@@ -11,7 +11,8 @@
 [docker] (https://hub.docker.com/help/)
 
 ### Tools for windows
-[kitematic](https://github.com/docker/kitematic)
+[kitematic](https://github.com/docker/kitematic) 
+[doc kitematic](https://github.com/docker/docker.github.io/tree/master/kitematic)
 
 ### other links
 
