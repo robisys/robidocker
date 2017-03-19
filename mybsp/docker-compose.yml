@@ -3,7 +3,7 @@ services:
   nginx:
     image: prooph/nginx:www
     ports:
-      - "8080:80"
+      - "8081:80"
       - "443:443"
     links:
       - php:php
