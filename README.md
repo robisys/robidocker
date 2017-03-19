@@ -5,7 +5,7 @@
 [![Build LINIT Status ](https://lint.travis-ci.org/)](http://lint.travis-ci.org/robisys/robidocker)
 
 ## Documentation
-[liesmich] (liesmich.md)
+[liesmich](liesmich.md)
 
 [travis.ci](https://github.com/travis-ci/travis-ci)  --
 [docker] (https://hub.docker.com/help/)
