@@ -10,7 +10,7 @@ install:
   - docker build -t blog .
   - docker run -d -p 127.0.0.1:80:80 --name blog blog
   - docker-compose -f mybsp/docker-compose.yml up  -d
-  #- docker-compose -f mybsp1/docker-compose.yml up  -d
+  - docker-compose -f mybsp1/docker-compose.yml up  -d
   #- docker-compose -f mybsp2/docker-compose.yml up  -d 
   #- docker-compose -f mybsp3/docker-compose.yml up  -d
 
