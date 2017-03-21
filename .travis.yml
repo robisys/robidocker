@@ -23,3 +23,7 @@ before_script:
 script:
   - docker ps 
   - python tests.py
+
+after_script:
+  - docker-compose down
+  
