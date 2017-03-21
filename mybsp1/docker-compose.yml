@@ -4,7 +4,7 @@ services:
     image: prooph/nginx:www
     ports:
       - "8083:80"
-      - "443:443"
+      - "4443:443"
     links:
       - php:php
     volumes_from:
