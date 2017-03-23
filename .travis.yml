@@ -10,21 +10,21 @@ services:
 install:
  # - docker build -t blog .
  # - docker run -d -p 127.0.0.1:80:80 --name blog blog
-  - docker run -d -p 127.0.0.1:80:80 --name blog madflojo/blog
-  #- docker-compose -f mybsp/docker-compose.yml up  -d
+ # - docker run -d -p 127.0.0.1:80:80 --name blog madflojo/blog
+  - docker-compose -f contao/docker-compose.yml up  -d
   #- docker-compose -f mybsp1/docker-compose.yml up  -d
   #- docker-compose -f mybsp2/docker-compose.yml up  -d 
   #- docker-compose -f mybsp3/docker-compose.yml up  -d
 
 before_script:
-  - pip install -r requirements.txt
-  - pip install mock
-  - pip install requests
-  - pip install feedparser
+#  - pip install -r requirements.txt
+#  - pip install mock
+#  - pip install requests
+#  - pip install feedparser
 
 script:
   - docker ps 
-  - python tests.py
+#  - python tests.py
   #- ./test.sh
 
 
