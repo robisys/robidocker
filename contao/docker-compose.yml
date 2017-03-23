@@ -1,0 +1,24 @@
+version: "2"
+services:
+  web:
+    image: webdevops/php-nginx
+    container_name: contao-nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - "mysql"
+    links:
+      - mysql
+    volumes:
+      - ~/workspace/projects/contao-docker/contao:/app
+    environment:
+      WEB_DOCUMENT_INDEX: "/web/app.php"
+  mysql:
+    image: mysql:latest
+    container_name: contao-mysql
+    # volumes:
+    #  - ~/workspace/projects/contao-docker/dbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: contaodb
+      
