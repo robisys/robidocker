@@ -33,6 +33,8 @@ Robidocker
 
 [Running Docker in a Travis CI build.](https://github.com/moul/travis-docker)
 
+[self-managing-servers-with-masterless-saltstack-minions](http://bencane.com/2016/03/22/self-managing-servers-with-masterless-saltstack-minions/)
+
 [Example ](https://github.com/moul/travis-docker-example)
 
 
