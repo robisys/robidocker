@@ -11,6 +11,8 @@ install:
  # - docker build -t blog .
  # - docker run -d -p 127.0.0.1:80:80 --name blog blog
  # - docker run -d -p 127.0.0.1:80:80 --name blog madflojo/blog
+ # - docker volume create --name weba-app-data
+ # - docker volume create --name webb-app-data
   - docker-compose -f contao/docker-compose.yml up  -d
   #- docker-compose -f mybsp1/docker-compose.yml up  -d
   #- docker-compose -f mybsp2/docker-compose.yml up  -d 
