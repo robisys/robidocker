@@ -26,7 +26,8 @@ script:
   - docker ps 
   - python tests.py
   #- ./test.sh
-  
+
+
 after_script:
   #- docker-compose down
   
