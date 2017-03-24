@@ -21,7 +21,7 @@ services:
   dataphp:
     image: debian:jessie
     volumes:
-      - ./www:/var/www
+      - ./public:/var/www/public
 
 
   phpmyadmin:
