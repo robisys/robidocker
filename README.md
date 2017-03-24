@@ -15,7 +15,7 @@
 
 [doc kitematic](https://github.com/docker/docker.github.io/tree/master/kitematic)
 
-[kitematic liesmich](kitematic-liesmich.md)
+[kitematic liesmich](kitematic_liesmich.md)
 
 ### other links
 
