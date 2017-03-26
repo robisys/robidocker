@@ -5,7 +5,7 @@ services:
     image: prooph/nginx:www
     ports:
       - "8081:80"
-      - "443:443"
+      - "8443:443"
     links:
       - php:php
     volumes_from:
@@ -34,30 +34,31 @@ services:
       - mariadb:mariadb
     ports:
        - 8082:80
-    volumes_from:
-       - dataphpmyadmin
+#    volumes_from:
+#       - dataphpmyadmin
      
-  dataphpmyadmin:
-    image: debian:jessie
+#  dataphpmyadmin:
+#    image: debian:jessie
     volumes:
        - /sessions
        - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
-
+     #  - ./phpmyadmin:/etc/phpmyadmin
+       
   mariadb:
     image: mariadb
- #   ports:
- #     - "3306:3306"
+    ports:
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=dev
       - MYSQL_USER=dev
       - MYSQL_PASSWORD=dev
       - MYSQL_DATABASE=prooph
     
-    volumes_from:
-       - datamariadb  
+#    volumes_from:
+#       - datamariadb  
   
-  datamariadb:
-    image: debian:jessie
+#  datamariadb:
+#    image: debian:jessie
     volumes:
        - ./dbdata:/var/lib/mysql
        
