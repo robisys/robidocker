@@ -9,3 +9,7 @@ docker-compose up  -d
 # docker ps -a -q |xargs docker stop
 # docker ps -q | xargs docker rm
 
+#docker-compose exec mariadb bash
+#docker-compose exec nginx bash
+#docker-compose exec phpmyadmin sh
+
