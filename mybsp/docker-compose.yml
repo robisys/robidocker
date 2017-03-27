@@ -9,19 +9,19 @@ services:
     links:
       - php:php
     volumes_from:
-      - dataphp
+      - php
 
   php:
     image: prooph/php:7.0-fpm
     links:
       - mariadb:mariadb
-    volumes_from:
-      - dataphp
+#    volumes_from:
+#      - dataphp
 
-  dataphp:
-    image: debian:jessie
+#  dataphp:
+#    image: debian:jessie
     volumes:
-      - ./public:/var/www/public
+      - public:/var/www/public
 
 
   phpmyadmin:
@@ -36,14 +36,14 @@ services:
        - 8082:80
 #    volumes_from:
 #       - dataphpmyadmin
-     
+
 #  dataphpmyadmin:
 #    image: debian:jessie
     volumes:
        - /sessions
-       - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
-     #  - ./phpmyadmin:/etc/phpmyadmin
-       
+     #  - ./phpmyadmin/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+       - phpmyadmin:/etc/phpmyadmin
+
   mariadb:
     image: mariadb
     ports:
@@ -53,16 +53,20 @@ services:
       - MYSQL_USER=dev
       - MYSQL_PASSWORD=dev
       - MYSQL_DATABASE=prooph
-    
+
 #    volumes_from:
-#       - datamariadb  
-  
+#       - datamariadb
+
 #  datamariadb:
 #    image: debian:jessie
     volumes:
-       - ./dbdata:/var/lib/mysql
-       
+       - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
+  public:
+  phpmyadmin:
 
 
-      
-                   
+
+
