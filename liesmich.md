@@ -28,7 +28,9 @@ https://websetnet.com/first-steps-docker-containers-windows-server-2016/
 [docker-php-webentwicklung  http://prooph-software.de](http://prooph-software.de/blog/docker-php-webentwicklung.html)
 
 ## Verfügbare Kommandos
-systemctl show <groups>
+systemctl
+
+show "groups"
 
 systemd-analyse   systemd-delta    systemd-nspawn
 
