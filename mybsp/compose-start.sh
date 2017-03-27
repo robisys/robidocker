@@ -4,6 +4,7 @@ docker-compose up  -d
 #docker-compose logs             # ctrl-c beendet die Loganzeige
 #docker-compose logs rocketchat  # Ausgabe nur eines Containers
 #docker-compose down             # Container stoppen UND löschen
+#docker-compose config
 
 ## docker-clear
 # docker ps -a -q |xargs docker stop
