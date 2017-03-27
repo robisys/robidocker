@@ -1,4 +1,3 @@
-oot@b789c4b5ad0d:/# cat docker-entrypoint.sh
 #!/bin/bash
 set -eo pipefail
 shopt -s nullglob
