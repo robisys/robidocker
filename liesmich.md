@@ -27,3 +27,19 @@ https://websetnet.com/first-steps-docker-containers-windows-server-2016/
 
 [docker-php-webentwicklung  http://prooph-software.de](http://prooph-software.de/blog/docker-php-webentwicklung.html)
 
+## Verfügbare Kommandos
+systemctl show <groups>
+
+systemd-analyse   systemd-delta    systemd-nspawn
+
+## Testnetzwerk
+docker network create test
+
+docker run --net test -dit --name host1  -P so0k/envtest  sh
+
+sudo brctl show 
+
+sudo iptable -nvL
+
+ss -an | grep LISTEN
+
