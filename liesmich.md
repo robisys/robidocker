@@ -1,5 +1,35 @@
 # liesmich
 
+##  Kitematic
+
+Docker CLI
+
+Windows PowerShell
+Copyright (C) 2009 Microsoft Corporation. Alle Rechte vorbehalten.
+
+PS C:\Program Files\Docker Toolbox> bash
+
+user@PC  /c/Program Files/Docker Toolbox
+
+$ uname -a
+
+MSYS_NT-6.1 PC 2.4.1(0.294/5/3) 2016-02-03 10:57 x86_64 Msys
+
+user@PC   /c/Program Files/Docker Toolbox
+
+$
+
+## Docker Quickstart
+user@PC MINGW64 ~
+$ uname -a
+MINGW64_NT-6.1 PC 2.5.0(0.295/5/3) 2016-03-31 18:47 x86_64 Ms
+
+user@PC  MINGW64 ~
+$ cd
+
+
+#  weiter
+
 robisys
 
 [docker 5 compose ](https://www.ab-heute-programmieren.de/docker-teil-5-docker-compose-fuer-mehrere-container/)
